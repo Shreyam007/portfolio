@@ -1,0 +1,118 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Shreyam Pandey</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            text-align: justify;
+        }
+        h2 {
+            color: #4CAF50;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        p, ul {
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+        section:hover {
+            background: linear-gradient(135deg, #f9f9f9, #eaeaea);
+            transform: scale(1.02);
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        About Me - Shreyam Pandey
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <button onclick="scrollToSection('about-me')">About Me</button>
+        <button onclick="scrollToSection('qualifications')">Qualifications</button>
+        <button onclick="scrollToSection('future-goals')">My Future Goal</button>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>
+            My name is Shreyam Pandey, a 19-year-old computer science student at Pimpri Chinchwad University, Pune. I am really passionate about coding and enjoy exploring new programming languages. I have a strong foundation in Python, SQL, and C/C++ and am currently working on web development to expand my technical skills further.
+        </p>
+        <p>
+            Coding isn’t just a skill for me; it’s a passion that drives me to create and innovate. My journey in computer science has been a mix of learning, experimentation, and application. I aspire to build efficient and impactful solutions that make a difference.
+        </p>
+    </section>
+
+    <!-- Qualifications Section -->
+    <section id="qualifications">
+        <h2>My Qualifications</h2>
+        <ul>
+            <li>Completed Google Cybersecurity Certificate</li>
+            <li>Completed ISRO Remote Sensing and Digital Image Analysis Course</li>
+            <li>Completed AWS Technical Essentials Course</li>
+        </ul>
+    </section>
+
+    <!-- Future Goals Section -->
+    <section id="future-goals">
+        <h2>My Future Goal</h2>
+        <p>
+            My ultimate goal is to become an exceptional web developer and a brilliant software engineer. I aim to master the art of creating seamless user experiences and develop software solutions that are both efficient and innovative. I believe in continuous learning and growth, and I’m dedicated to honing my skills to achieve this ambition.
+        </p>
+    </section>
+
+    <!-- JavaScript for Navigation -->
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
